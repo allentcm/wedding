@@ -8,6 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
     <style>
         .navbar-dark .navbar-nav .nav-link {
@@ -59,10 +60,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">HOME</a>
+                        <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">LINK</a>
+                        <a class="nav-link" href="#matrimony">Matrimony</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#banquet">Banquet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#location">Location</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -70,26 +80,20 @@
     </nav>
     <main role="main">
 
-        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <a id="home"></a>
         <div class="jumbotron background-01">
             <div class="container">
-                <h1 class="display-3">Allen Tuh ❤️ Pek Hoon</h1>
-                <h1 class="display-3">We are getting married!</h1>
-                <p>On this joyous occasion, we would like to warmly invite you to our wedding celebration.</p>
+                <h1 class="display-4">Allen Tuh ❤️ Pek Hoon</h1>
+                <h1 class="display-4">We are getting married!</h1>
+                <p class="lead">On this joyous occasion, we would like to warmly invite you to our wedding celebration.</p>
+                <hr class="my-4">
+                <p>Click the button for SafeEntry into Furama RiverFront Hotel.</p>
+                <a class="btn btn-light btn-lg" href="#" role="button"><img src="images/safeentry.svg" class="card-img" alt="Safe Entry" height="26"></a>
             </div>
         </div>
 
         <div class="container">
-            <div class="card mb-3 text-center">
-                <div class="col-md-12">
-                    <div class="card-body">
-                        <h5><img src="images/safeentry.svg" class="card-img" alt="Safe Entry" height="32"></h5>
-                        <p class="card-text">Click the button for safe entry to Furama RiverFront Singapore.</p>
-                        <a href="#" class="btn btn-primary">Enter Now</a>
-                    </div>
-                </div>
-            </div>
-
+            <a id="matrimony"></a>
             <div class="card mb-3">
                 <div class="row no-gutters">
                     <div class="col-md-8">
@@ -104,6 +108,7 @@
                 </div>
             </div>
 
+            <a id="banquet"></a>
             <div class="card mb-3">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -118,46 +123,78 @@
                 </div>
             </div>
 
-            <div class="row row-cols-1 row-cols-md-3">
-                <div class="col mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Public Transport</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
+            <a id="location"></a>
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-header">
+                        <b><i class="fa fa-subway float-right"></i>Public Transport</b>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Take the MRT and alight at Tiong Bahru Station</li>
+                            <li class="list-group-item">Walk to Tiong Bahru Bus Station</li>
+                            <li class="list-group-item">Take a bus service 122, 33, 63 or 851</li>
+                            <li class="list-group-item">Alight at bus stop Bef Outram Flyover</li>
+                            <li class="list-group-item">Walk about 6 min to reach Furama RiverFront Hotel</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://goo.gl/maps/YFXx5wyTsMGJApWs5" class="card-link"><i class="fa fa-map-marked-alt"></i> Google Map</a>
                     </div>
                 </div>
-                <div class="col mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Car</h5>
-                            <p class="card-text">This is a short card.</p>
-                        </div>
+                <div class="card">
+                    <div class="card-header">
+                        <b><i class="fa fa-car float-right"></i>Driving</b>
                     </div>
-                </div>
-                <div class="col mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                        </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Request for complimentary parking coupon in the RSVP</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://goo.gl/maps/WMfKyqHTC6qQQP1aA" class="card-link"><i class="fa fa-map-marked-alt"></i> Google Map</a>
                     </div>
                 </div>
             </div>
 
+            <br>
             <div class="col-md-12">
                 <div id="map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8106712586814!2d103.8338551152801!3d1.287730162129299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1977b165dfcd%3A0x939e0c251389175e!2sFurama+RiverFront!5e0!3m2!1sen!2ssg!4v1475148873920"
                         width="100%" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
                 </div>
             </div>
-        </div>
 
-        <hr>
-
+            <br>
+            <a id="contact"></a>
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-header">
+                        <b>Allen Tuh</b>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><i class="fa fa-phone float-right"></i>Mobile: 93387535</li>
+                        <li class="list-group-item"><i class="fa fa-envelope float-right"></i>Email: allentcm@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <b>Lee Pek Hoon</b>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><i class="fa fa-phone float-right"></i>Mobile: 97556661</li>
+                        <li class="list-group-item"><i class="fa fa-envelope float-right"></i>Email: pekhoon86@hotmail.com</li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <!-- /container -->
 
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <p class="lead">RSVP</p>
+            </div>
+        </div>
     </main>
     <footer class="container">
         <p>© Copyright 2020-2021 Allen Tuh Pek Hoon. All right reserved.</p>

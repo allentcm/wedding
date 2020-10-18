@@ -24,6 +24,14 @@
             text-transform: uppercase;
         }
         
+        .navbar-dark .navbar-toggler-icon {
+            background-image: url("data: image/svg+xml, %3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28191, 155, 48%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+        
+        .navbar-toggler:focus {
+            outline: 0px;
+        }
+        
         .bg-light-green {
             background-color: #C0E6C4;
         }
@@ -65,6 +73,25 @@
             font-family: 'Allura', cursive !important;
         }
         
+        .hero-title {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+            z-index: 999;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-title {
+                top: 70%;
+                font-size: 0.5em;
+            }
+            .hero-title .display-4 {
+                font-size: 2.5em;
+            }
+        }
+        
         @media (min-width: 768px) {
             .wedding-shoots-height {
                 height: 360px;
@@ -78,21 +105,18 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-light-green">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="images/logo.svg" width="26" height="26" alt="" loading="lazy">
+                <img src="images/logo.svg" width="30" height="30">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
+            </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#matrimony">Matrimony</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#banquet">Banquet</a>
+                        <a class="nav-link" href="#rsvp">RSVP</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#location">Location</a>
@@ -108,6 +132,11 @@
 
         <a id="home"></a>
         <div id="carouselWeddingShoots" class="carousel slide wedding-shoots-height" data-ride="carousel" data-touch="true">
+            <div class="hero-title text-center">
+                <h2 class="card-title gold title display-4">Allen
+                    <span style="font-size: 0.6em;">&</span> Pek Hoon</h2>
+                <p class="card-text gold">16th Jan 2021 | Furama Riverfront Hotel</p>
+            </div>
             <ol class="carousel-indicators">
                 <li data-target="#carouselWeddingShoots" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselWeddingShoots" data-slide-to="1"></li>
@@ -159,13 +188,30 @@
             </a>
         </div>
 
+        <a id="rsvp"></a>
         <div class="container">
-            <div class="card mb-3 text-center bg-dark-transparent text-white">
+            <div class="card mb-3 d-none d-md-block text-center bg-dark-transparent text-white">
                 <div class="card-body">
-                    <h2 class="card-title gold title display-4">Allen Tuh & Pek Hoon Wedding</h2>
                     <p class="card-text">On this joyous occasion, we would like to warmly invite you to our wedding celebration on</p>
                     <address>
-                        <h4 class="card-title title display-4">16th Jan 2021</h4>
+                        <h4 class="card-title title">|</h4>
+                        <h4 class="card-title title">Saturday, 16th Jan 2021, 12PM</h4>
+                        <h4 class="card-title title">|</h4>
+                        <h4 class="card-title">Furama Riverfront Hotel</h4>
+                        The Waterfall (Level 1)<br>
+                        405 havelock road S169633<br>
+                        <h4 class="card-title title">|</h4>
+                    </address>
+                    <a href="https://forms.gle/34zoyXHWLhH7BhT2A" class="btn btn-info"><i class="far fa-calendar-check"></i> RSVP Now</a>
+
+                </div>
+            </div>
+
+            <div class="card mb-3 d-block d-md-none text-center">
+                <div class="card-body">
+                    <p class="card-text">On this joyous occasion, we would like to warmly invite you to our wedding celebration on</p>
+                    <address>
+                        <h4 class="card-title title">16th Jan 2021</h4>
                         <h4 class="card-title">Furama Riverfront Hotel</h4>
                         The Waterfall (Level 1)<br>
                         405 havelock road S169633<br>
@@ -174,6 +220,7 @@
 
                 </div>
             </div>
+
             <div class="card-deck">
                 <!-- <div class="card">
                     <div class="card-body">
@@ -198,42 +245,6 @@
                 </div> -->
             </div>
             <br>
-
-            <a id="matrimony"></a>
-            <div class="card mb-3">
-                <div class="row no-gutters">
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h2 class="card-title gold title">Holy Matrimony</h2>
-                            <address>
-                                <h4 class="card-title display-4">11AM</h4>
-                                <h4 class="card-title">The Waterfall (Level 1)</h4>
-                            </address>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="images/solemnization.jpg" class="card-img" alt="Banquet">
-                    </div>
-                </div>
-            </div>
-
-            <a id="banquet"></a>
-            <div class="card mb-3">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <img src="images/banquet.jpg" class="card-img" alt="Banquet">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h2 class="card-title gold title">Lunch Banquet</h2>
-                            <address>
-                                <h4 class="card-title display-4">12AM</h4>
-                                <h4 class="card-title">The Waterfall (Level 1)</h4>
-                            </address>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <a id="location"></a>
             <div class="card-deck">
@@ -282,20 +293,20 @@
             <div class="card-deck">
                 <div class="card">
                     <div class="card-header gold">
-                        <b>Allen Tuh</b>
+                        <b><i class="fa float-right">🤵</i>Allen Tuh</b>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><i class="fa fa-phone float-right"></i>Mobile: 93387535</li>
-                        <li class="list-group-item"><i class="fa fa-envelope float-right"></i>Email: allentcm@gmail.com</li>
+                        <li class="list-group-item"><i class="fa fa-phone float-right"></i>93387535</li>
+                        <li class="list-group-item"><i class="fa fa-envelope float-right"></i>allentcm@gmail.com</li>
                     </ul>
                 </div>
                 <div class="card">
                     <div class="card-header gold">
-                        <b>Lee Pek Hoon</b>
+                        <b><i class="fa float-right">👰</i>Lee Pek Hoon</b>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><i class="fa fa-phone float-right"></i>Mobile: 97556661</li>
-                        <li class="list-group-item"><i class="fa fa-envelope float-right"></i>Email: pekhoon86@hotmail.com</li>
+                        <li class="list-group-item"><i class="fa fa-phone float-right"></i>97556661</li>
+                        <li class="list-group-item"><i class="fa fa-envelope float-right"></i>pekhoon86@hotmail.com</li>
                     </ul>
                 </div>
             </div>

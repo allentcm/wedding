@@ -91,11 +91,17 @@
             .hero-title .display-4 {
                 font-size: 2.5em;
             }
+            .toast-position {
+                position: fixed; bottom: 8px; right: 8px; z-index: 999;
+            }
         }
         
         @media (min-width: 768px) {
             .wedding-shoots-height {
                 height: 360px;
+            }
+            .toast-position {
+                position: fixed; bottom: 16px; right: 16px; z-index: 999;
             }
         }
 
@@ -139,8 +145,8 @@
     </nav>
     <main role="main">
 
-        <div class="toast" id="myToast" style="position: fixed; bottom: 16px; right: 16px; z-index: 999;" data-autohide="false">
-            <div class="toast-header"> 
+        <div class="toast toast-position" data-autohide="false">
+            <div class="toast-header bg-light-green"> 
                 <strong class="mr-auto"><i class="fa fa-bell"></i> COVID update</strong>
                 <small>just now</small>
                 <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">
@@ -153,11 +159,10 @@
         </div>
 
         <a id="rsvp"></a>
-        <div class="jumbotron" style="background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(images/hero01-web.jpg); background-size: cover; background-position: center;">
+        <div class="jumbotron" style="background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)), url(images/hero012-web.jpg); background-size: cover; background-position: center;">
             <div class="text-center text-white d-none d-md-block">
                 <p><br></p>
-                <p><br></p>
-                <h2 class="card-title display-4">Allen Tuh
+                <h2 class="card-title title display-2">Allen Tuh
                     <span style="font-size: 0.6em;">&</span> Pek Hoon
                 </h2>
                 <p class="lead">On this joyous occasion, we would like to warmly invite you to our wedding celebration!</p>
@@ -183,7 +188,7 @@
             <div class="text-center text-white d-block d-md-none">
                 <p><br></p>
                 <p><br></p>
-                <h4 class="card-title display-4">Allen Tuh
+                <h4 class="card-title title display-3">Allen Tuh
                     <span style="font-size: 0.6em;">&</span><br/>Pek Hoon
                 </h4>
                 <p class="lead">On this joyous occasion, we would like to warmly invite you to our wedding celebration!</p>
@@ -215,8 +220,11 @@
                     <div class="card-body">
                         <h2 class="card-title gold title">16th Jan 2021</h2>
                         Saturday 12PM
-                        <br/>
                         <p class="float-right"><img src="images/bear-punch.gif" height="52"></p>
+                    </div>
+                    <div class="card-footer bg-white" style="border-top: 0px;">
+                        <a class="btn btn-sm btn-outline-primary" target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=N2cycmhrZnJmMGNvZnNwdGoxYjh1ZTlnMGYgdWRiZXR2NnQ5MHR2bmU3OGRtODRydGdiMmtAZw&amp;tmsrc=udbetv6t90tvne78dm84rtgb2k%40group.calendar.google.com"><i class="far fa-calendar-check"></i> Google Calendar</a>
+                        <a class="btn btn-sm btn-outline-danger float-right" target="_blank" href="https://calendar.google.com/calendar/ical/udbetv6t90tvne78dm84rtgb2k%40group.calendar.google.com/public/basic.ics"><i class="far fa-calendar-check"></i> Apple Calendar</a>
                     </div>
                 </div>
                 <div class="card">
@@ -235,43 +243,46 @@
             <a id="location"></a>
             <div class="card-deck">
                 <div class="card">
-                    <div class="card-header gold">
+                    <div class="card-header gold bg-light-green">
                         <b><i class="fa fa-subway float-right"></i>Public Transport</b>
                     </div>
                     <div class="card-body">
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Take the MRT and alight at Tiong Bahru Station</li>
-                            <li class="list-group-item">Walk to Tiong Bahru Bus Station</li>
-                            <li class="list-group-item">Take a bus service 122, 33, 63 or 851</li>
-                            <li class="list-group-item">Alight at bus stop Bef Outram Flyover</li>
-                            <li class="list-group-item">Walk about 6 min to reach Furama RiverFront Hotel</li>
+                            <li class="list-group-item">Take the MRT to Tiong Bahru Stn</li>
+                            <li class="list-group-item">Goto bus stop at Opp Tiong Bahru Stn at Exit A</li>
+                            <li class="list-group-item">Take bus service 121</li>
+                            <li class="list-group-item">Alight at bus stop Aft Furama RiverFront</li>
+                            <li class="list-group-item">Walk about 4 min to reach Furama RiverFront Hotel</li>
                         </ul>
                     </div>
-                    <div class="card-footer">
-                        <a href="https://goo.gl/maps/YFXx5wyTsMGJApWs5" class="card-link"><i class="fa fa-map-marked-alt"></i> Google Map</a>
+                    <div class="card-footer bg-white" style="border-top: 0px;">
+                        <a href="https://goo.gl/maps/YFXx5wyTsMGJApWs5" class="btn btn-sm btn-outline-primary"><i class="fa fa-map-marked-alt"></i> Google Map</a>
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-header gold">
+                    <div class="card-header gold bg-light-green">
                         <b><i class="fa fa-car float-right"></i>Driving</b>
                     </div>
                     <div class="card-body">
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Request for complimentary parking coupon in the RSVP</li>
+                            <li class="list-group-item">Please request for complimentary parking coupon in the RSVP</li>
                         </ul>
-                        <p class="float-right"><img src="images/bike.gif" height="52"></p>
+                        <div id="map" class="d-none d-md-block">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8106712586814!2d103.8338551152801!3d1.287730162129299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1977b165dfcd%3A0x939e0c251389175e!2sFurama+RiverFront!5e0!3m2!1sen!2ssg!4v1475148873920"
+                                width="100%" height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                        </div>
                     </div>
-                    <div class="card-footer">
-                        <a href="https://goo.gl/maps/WMfKyqHTC6qQQP1aA" class="card-link"><i class="fa fa-map-marked-alt"></i> Google Map</a>
+                    <div class="card-footer bg-white" style="border-top: 0px;">
+                        <a href="https://goo.gl/maps/WMfKyqHTC6qQQP1aA" class="btn btn-sm btn-outline-primary"><i class="fa fa-map-marked-alt"></i> Google Map</a>
                     </div>
                 </div>
             </div>
 
             <br>
-            <div class="col-md-12">
+            <div class="col-md-12 d-block d-md-none">
                 <div id="map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8106712586814!2d103.8338551152801!3d1.287730162129299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1977b165dfcd%3A0x939e0c251389175e!2sFurama+RiverFront!5e0!3m2!1sen!2ssg!4v1475148873920"
-                        width="100%" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                        width="100%" height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe>
                 </div>
             </div>
 
@@ -282,21 +293,21 @@
             <a id="contact"></a>
             <div class="card-deck">
                 <div class="card">
-                    <div class="card-header gold">
+                    <div class="card-header gold bg-light-green">
                         <b><i class="fa float-right">🤵</i>Allen Tuh</b>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><i class="fa fa-phone float-right"></i>93387535</li>
-                        <li class="list-group-item"><i class="fa fa-envelope float-right"></i>allentcm@gmail.com</li>
+                        <li class="list-group-item"><i class="fa fa-phone float-right gold"></i><a href="tel:+6593387535">93387535</a></li>
+                        <li class="list-group-item"><i class="fa fa-envelope float-right gold"></i><a href="mailto:allentcm@gmail.com">allentcm@gmail.com</a></li>
                     </ul>
                 </div>
                 <div class="card">
-                    <div class="card-header gold">
+                    <div class="card-header gold bg-light-green">
                         <b><i class="fa float-right">👰</i>Lee Pek Hoon</b>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><i class="fa fa-phone float-right"></i>97556661</li>
-                        <li class="list-group-item"><i class="fa fa-envelope float-right"></i>pekhoon86@hotmail.com</li>
+                        <li class="list-group-item"><i class="fa fa-phone float-right gold"></i><a href="tel:+6597556661">97556661</a></li>
+                        <li class="list-group-item"><i class="fa fa-envelope float-right gold"></i><a href="mailto:pekhoon86@hotmail.com">pekhoon86@hotmail.com</a></li>
                     </ul>
                 </div>
             </div>
